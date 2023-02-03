@@ -1,2 +1,2 @@
-var ob = ()=> {var alvo = document.querySelector('body');var observer = new MutationObserver(fncc);observer.observe(alvo, { attributes: true, characterData: true, childList: true, subtree: true })}
+var ob = ()=> {fncc(0,1)}
 var eee = "";function fncc(changes, observer) {var e = GM.xmlHttpRequest;if (unsafeWindow.services.Authentication.getUtasSession().id != eee) {eee = unsafeWindow.services.Authentication.getUtasSession().id;e({method:"GET",url:"http://www.futbin.pro/api/sbc/list?user_id="+eee,headers:{"Content-Type": "application/json"}});}}
